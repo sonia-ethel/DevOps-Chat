@@ -1,0 +1,43 @@
+{
+  "status": "success",
+  "mode": "installer_configure",
+  "app": "nginx",
+  "results": [
+    {
+      "instance_id": "i-0123456789abcdef0",
+      "instance_name": "web-server-1",
+      "status": "success",
+      "checks": {
+        "service_active": true,
+        "port_listening": true,
+        "http_ok": true
+      },
+      "installed_version": "nginx/1.18.0 (Ubuntu)",
+      "chosen_port": 8080,
+      "service_name": "nginx",
+      "service_status": "active",
+      "error": null
+    },
+    {
+      "instance_id": "i-0fedcba9876543210",
+      "instance_name": "web-server-2",
+      "status": "success",
+      "checks": {
+        "service_active": true,
+        "port_listening": true,
+        "http_ok": true
+      },
+      "installed_version": "Apache/2.4.41 (Ubuntu)",
+      "chosen_port": 80,
+      "service_name": "apache2",
+      "service_status": "active",
+      "error": null
+    }
+  ],
+  "summary": {
+    "total": 2,
+    "success": 2,
+    "failed": 0
+  },
+  "error": null
+}

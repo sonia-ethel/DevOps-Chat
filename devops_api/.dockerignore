@@ -1,0 +1,13 @@
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+generated_files/*
+!generated_files/.gitkeep
+*.log
+*.pem
+*.key
+.terraform/
+*.tfstate
+*.tfstate.*

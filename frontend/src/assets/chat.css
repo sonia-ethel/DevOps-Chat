@@ -1,0 +1,121 @@
+/* Import JetBrains Mono font for better code formatting */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+/* Ensure smooth scrolling for chat containers */
+.chat-container {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar styles for webkit browsers */
+.chat-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-scrollbar::-webkit-scrollbar-track {
+  background: rgba(30, 41, 59, 0.1);
+}
+
+.chat-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.3);
+  border-radius: 3px;
+}
+
+.chat-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.5);
+}
+
+/* Ensure proper text selection in message bubbles */
+.message-bubble {
+  user-select: text;
+}
+
+.message-bubble * {
+  user-select: text;
+}
+
+/* Smooth transitions for message animations */
+.message-fade-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.message-fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 300ms ease-out;
+}
+
+/* Code block syntax highlighting base styles */
+.code-block {
+  font-family: 'JetBrains Mono', 'Monaco', 'Consolas', monospace;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+/* Responsive message bubble adjustments */
+@media (max-width: 600px) {
+  .message-bubble {
+    max-width: 90vw !important;
+  }
+  
+  .message-content {
+    padding: 12px 16px;
+  }
+}
+
+/* Improved link styling in messages */
+.message-link {
+  word-break: break-word;
+  hyphens: auto;
+}
+
+/* Better table formatting in messages */
+.message-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 16px 0;
+}
+
+.message-table th,
+.message-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.message-table th {
+  background-color: rgba(99, 102, 241, 0.1);
+  font-weight: 600;
+}
+
+/* Improved list styling */
+.message-list li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.message-list li::marker {
+  color: #6366f1;
+}
+
+/* Blockquote improvements */
+.message-blockquote {
+  border-left: 4px solid #6366f1;
+  padding-left: 16px;
+  margin: 16px 0;
+  font-style: italic;
+  background-color: rgba(99, 102, 241, 0.05);
+}
+
+/* Code span improvements */
+.message-code-inline {
+  background-color: rgba(148, 163, 184, 0.1);
+  color: #6366f1;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-family: 'JetBrains Mono', monospace;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+}

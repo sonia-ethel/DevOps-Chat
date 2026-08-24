@@ -1,0 +1,76 @@
+.env
+docs/private/
+tmp/
+*.key
+*.pem
+*.p12
+*.crt
+*.cer
+**/node_modules/
+**/__pycache__/
+.DS_Store
+*.tsbuildinfo
+*.log
+/.venv/
+**/.venv/
+/.env.local
+/.env.development
+/.env.production
+/.env.test
+**/.python-version
+**/.idea/
+**/.vscode/
+**/.pytest_cache/
+**/.mypy_cache/
+
+# 🔹 Backend Python
+venv/
+__pycache__/
+*.pyc
+
+# Ignore les dossiers générés automatiquement
+devops_api/generated_files/
+!devops_api/generated_files/.gitkeep
+!devops_api/generated_files/README.md
+
+# Fichiers sensibles backend
+devops_api/.env
+
+# 🔹 Frontend Node/React
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/.env
+
+# Tests / coverage
+coverage/
+htmlcov/
+frontend/coverage/
+
+# 🔹 Logs et fichiers temporaires
+*.log
+*.bak
+test.db
+*.sqlite
+*.sqlite3
+
+# 🔹 Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+.terraform.lock.hcl
+
+# 🔹 Ansible
+*.retry
+.ansible/
+ansible.log
+facts/
+
+# 🔹 Scripts de cleanup (one-time tools)
+scripts/dev/remove_emojis.sh
+scripts/dev/remove_emojis_safe.py
+
+# 🔹 Systèmes d'exploitation
+.DS_Store
+Thumbs.db
